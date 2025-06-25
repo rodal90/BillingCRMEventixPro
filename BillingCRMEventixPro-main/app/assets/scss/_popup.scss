@@ -1,0 +1,131 @@
+$dark-blue: #022231;
+$bright-blue: #24C2DB;
+$light-color: #FEFEFE;
+$highlight-color: #FF8C00;
+$secondary-blue: #1D3557;
+
+// Colores de fondo de los tipos de PopUps
+$alert-bg: #FFCC00;
+$confirm-bg: #24C2DB;
+$error-bg: #FF4C4C;
+$success-bg: #28A745;
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.popup-box {
+  background: $light-color;
+  border-radius: 8px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  transform: translateY(-50px);
+  animation: slideUp 0.5s ease-out forwards;
+  opacity: 0.95;
+
+  &.popup-confirm {
+    background: $confirm-bg;
+  }
+
+  &.popup-alert {
+    background: $alert-bg;
+  }
+
+  &.popup-error {
+    background: $error-bg;
+  }
+
+  &.popup-success {
+    background: $success-bg;
+  }
+}
+
+.popup-box p {
+  color: $dark-blue;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.popup-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+button {
+  background: $bright-blue;
+  color: $light-color;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin: 0 10px;
+  
+  &:hover {
+    background: $secondary-blue;
+    transform: scale(1.05);
+  }
+  
+  &:active {
+    background: $highlight-color;
+  }
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: $secondary-blue;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+  
+  &:hover {
+    background: $bright-blue;
+  }
+}
+
+// Animaciones
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

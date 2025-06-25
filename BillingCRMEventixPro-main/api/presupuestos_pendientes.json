@@ -1,0 +1,123 @@
+[
+    {
+      "nombre_cliente": "Tech Solutions S.L.",
+      "nombre_contacto": "María Fernández",
+      "estado": "iniciado",
+      "fecha_creacion": "2024-09-15",
+      "importe": 15000.50,
+      "ultima_comunicacion": {
+        "contacto": "María Fernández",
+        "mensaje": "Revisando detalles del presupuesto.",
+        "fecha": "2024-09-20"
+      }
+    },
+    {
+      "nombre_cliente": "Innovatech Group",
+      "nombre_contacto": "Javier Gómez",
+      "estado": "enviado",
+      "fecha_creacion": "2024-09-22",
+      "importe": 8500.00,
+      "ultima_comunicacion": {
+        "contacto": "Javier Gómez",
+        "mensaje": "Pendiente de aprobación por el equipo financiero.",
+        "fecha": "2024-09-23"
+      }
+    },
+    {
+      "nombre_cliente": "Digital Horizons",
+      "nombre_contacto": "Ana Martínez",
+      "estado": "aceptado",
+      "fecha_creacion": "2024-09-10",
+      "importe": 12000.75,
+      "ultima_comunicacion": {
+        "contacto": "Ana Martínez",
+        "mensaje": "Presupuesto aprobado. Adelante con el proyecto.",
+        "fecha": "2024-09-12"
+      }
+    },
+    {
+      "nombre_cliente": "NextGen Enterprises",
+      "nombre_contacto": "Carlos López",
+      "estado": "rechazado",
+      "fecha_creacion": "2024-09-05",
+      "importe": 6000.00,
+      "ultima_comunicacion": {
+        "contacto": "Carlos López",
+        "mensaje": "Presupuesto fuera del alcance del cliente.",
+        "fecha": "2024-09-06"
+      }
+    },
+    {
+      "nombre_cliente": "Future Labs",
+      "nombre_contacto": "Laura Sánchez",
+      "estado": "iniciado",
+      "fecha_creacion": "2024-09-25",
+      "importe": 20000.00,
+      "ultima_comunicacion": {
+        "contacto": "Laura Sánchez",
+        "mensaje": "Hemos recibido el presupuesto, en revisión.",
+        "fecha": "2024-09-26"
+      }
+    },
+    {
+      "nombre_cliente": "DataStream Corp.",
+      "nombre_contacto": "Pedro Ruiz",
+      "estado": "enviado",
+      "fecha_creacion": "2024-09-18",
+      "importe": 9500.00,
+      "ultima_comunicacion": {
+        "contacto": "Pedro Ruiz",
+        "mensaje": "Esperando respuesta de su parte.",
+        "fecha": "2024-09-19"
+      }
+    },
+    {
+      "nombre_cliente": "GreenTech Industries",
+      "nombre_contacto": "Sofía Navarro",
+      "estado": "aceptado",
+      "fecha_creacion": "2024-09-20",
+      "importe": 18000.00,
+      "ultima_comunicacion": {
+        "contacto": "Sofía Navarro",
+        "mensaje": "Todo listo para iniciar el proyecto.",
+        "fecha": "2024-09-21"
+      }
+    },
+    {
+      "nombre_cliente": "Skyline Innovations",
+      "nombre_contacto": "Manuel Delgado",
+      "estado": "rechazado",
+      "fecha_creacion": "2024-09-08",
+      "importe": 7000.00,
+      "ultima_comunicacion": {
+        "contacto": "Manuel Delgado",
+        "mensaje": "No podemos proceder con el presupuesto.",
+        "fecha": "2024-09-09"
+      }
+    },
+    {
+      "nombre_cliente": "Quantum Solutions",
+      "nombre_contacto": "Elena García",
+      "estado": "iniciado",
+      "fecha_creacion": "2024-09-27",
+      "importe": 25000.00,
+      "ultima_comunicacion": {
+        "contacto": "Elena García",
+        "mensaje": "En proceso de revisión por el equipo.",
+        "fecha": "2024-09-28"
+      }
+    },
+    {
+      "nombre_cliente": "BlueTech Innovations",
+      "nombre_contacto": "Raúl Pérez",
+      "estado": "enviado",
+      "fecha_creacion": "2024-09-21",
+      "importe": 14000.50,
+      "ultima_comunicacion": {
+        "contacto": "Raúl Pérez",
+        "mensaje": "Presupuesto enviado, pendiente de revisión.",
+        "fecha": "2024-09-22"
+      }
+    }
+  ]
+  

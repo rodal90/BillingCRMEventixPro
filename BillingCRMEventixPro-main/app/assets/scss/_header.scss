@@ -1,0 +1,18 @@
+body>header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+
+  .logo-img {
+    max-width: 75px;
+    margin-right: 20px;
+  }
+
+  .main-nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}

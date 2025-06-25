@@ -1,0 +1,160 @@
+.providers-list-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.providers-list-container .providers-row {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.providers-list-container .providers-row:nth-of-type(odd) {
+  background-color: #f7f7f7;
+}
+.providers-list-container .providers-row:hover {
+  background-color: #e0f7fa;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+.providers-list-container .providers-row .providers-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.providers-list-container .providers-row .providers-data h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(18, 51, 67);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.providers-list-container .providers-row .providers-data p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+.providers-list-container .providers-row .providers-data button.button {
+  background-color: #ff9800;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.providers-list-container .providers-row .providers-data button.button:hover {
+  background-color: #fb8c00;
+  transform: translateY(-3px);
+}
+.providers-list-container .providers-row .providers-data button.button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tool-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.tool-bar button {
+  background-color: rgb(18, 51, 67);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.tool-bar button:hover {
+  background-color: #005f7f;
+  transform: translateY(-2px);
+}
+.tool-bar button:active {
+  transform: translateY(0);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.tool-bar .search-field {
+  display: flex;
+  align-items: center;
+}
+.tool-bar .search-field input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  margin-right: 0.5rem;
+  transition: border-color 0.3s;
+}
+.tool-bar .search-field input:focus {
+  border-color: rgb(18, 51, 67);
+  outline: none;
+}
+
+.new-provider-form, .update-form {
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+.new-provider-form label, .update-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(18, 51, 67);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.new-provider-form input[type=text],
+.new-provider-form textarea, .update-form input[type=text],
+.update-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  transition: border-color 0.3s;
+}
+.new-provider-form input[type=text]:focus,
+.new-provider-form textarea:focus, .update-form input[type=text]:focus,
+.update-form textarea:focus {
+  border-color: rgb(18, 51, 67);
+  outline: none;
+}
+.new-provider-form button, .update-form button {
+  background-color: rgb(18, 51, 67);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.new-provider-form button:hover, .update-form button:hover {
+  background-color: #005f7f;
+  transform: translateY(-2px);
+}
+.new-provider-form button:active, .update-form button:active {
+  transform: translateY(0);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}

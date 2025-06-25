@@ -1,0 +1,83 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+main .dashboard-shortcut {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+main .dashboard-shortcut h2 {
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+main .dashboard-shortcut .budget-list {
+  margin-top: 1rem;
+}
+main .dashboard-shortcut .budget-list .budget-row {
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+main .dashboard-shortcut .budget-list .budget-row.pendiente {
+  border-left: 5px solid #2ecc71;
+}
+main .dashboard-shortcut .budget-list .budget-row.completado {
+  border-left: 5px solid #e74c3c;
+}
+main .dashboard-shortcut .budget-list .budget-row:hover {
+  background-color: #ececec;
+}
+main .dashboard-shortcut .budget-list .budget-row p {
+  margin: 0.5rem 0;
+}
+main .dashboard-shortcut .budget-list .budget-row p strong {
+  font-weight: bold;
+}
+main .dashboard-shortcut .budget-list .budget-row p .estadopendiente {
+  color: #2ecc71;
+}
+main .dashboard-shortcut .budget-list .budget-row p .estadocompletado {
+  color: #e74c3c;
+}
+main .dashboard-shortcut .budget-list .budget-row button.btndet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main .dashboard-shortcut .budget-list .budget-row button.btndet:hover {
+  background-color: #217dbb;
+}
+
+footer {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

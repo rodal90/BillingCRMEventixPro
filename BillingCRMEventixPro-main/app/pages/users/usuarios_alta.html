@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Usuarios | Core formación</title>
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/theme.css">
+    <link rel="stylesheet" href="../../assets/css/clientes.css">
+    <script src="../../assets/js/apiurls.js" defer></script>
+    <script src="../../assets/js/createNewElement.js" defer></script>
+    <script src="../../assets/js/messages.js" defer></script>        
+    <script src="../../assets/js/menu.js" defer></script>
+    <script src="class/barra_acciones_class.js"></script>
+    <script src="js/usuarios_alta.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="content"></div>
+            <nav id="navegacion-principal"></nav>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+
+            <form id="registerForm">
+                <fieldset>
+                    <label for="username">Nombre de usuario(nick):</label>
+                    <input type="text" id="nick" name="username" required>
+                </fieldset>
+                <fieldset>
+                    <label for="username">email:</label>
+                    <input type="text" id="username" name="email" required>
+                </fieldset>
+                <fieldset>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </fieldset>
+                <fieldset>
+                    <label for="confirmPassword">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </fieldset>
+                <fieldset>
+                    <label for="">
+                        Role
+                    </label>
+                    <select name="role" id="role"></select>
+                </fieldset>
+                <button type="button" id="button-submit">Registrarse</button>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>

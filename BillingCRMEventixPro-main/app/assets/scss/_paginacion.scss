@@ -1,0 +1,24 @@
+.paginacion{
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:.5rem;
+    background-color: white;
+    padding: .3rem;
+    border-bottom: 1px solid rgb(199, 198, 198);
+    z-index: 1;
+    .paginacion-elemento{
+        display: flex;
+        align-items: center;
+        padding: .5rem .75rem;
+        border-radius: .3rem;
+        background-color: #eee;
+        cursor: pointer;
+        &.current-page{
+            background-color: #333;
+            color: white;
+        }
+    }
+}

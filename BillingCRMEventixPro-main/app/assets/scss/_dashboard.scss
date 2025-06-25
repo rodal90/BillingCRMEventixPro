@@ -1,0 +1,66 @@
+$light-gray: rgb(198, 209, 198);
+$yellow: rgb(234, 232, 90);
+$green: rgb(82, 179, 83);
+$light-bg: rgb(248, 245, 241);
+$red: rgb(250, 92, 92);
+
+.budget-row {
+    background-color: $light-gray;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &.iniciado {
+        background-color: $light-gray;
+        
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    &.enviado {
+        background-color: $light-gray;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    &.aceptado {
+        background-color: $light-gray;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    &.rechazado {
+        background-color: $light-gray;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+.estadoiniciado {
+    font-weight: bold;
+    color: $yellow;
+}
+
+.estadoenviado {
+    font-weight: bold;
+    color: $green;
+}
+
+.estadoaceptado {
+    font-weight: bold;
+    color: $light-bg;
+}
+
+.estadorechazado {
+    font-weight: bold;
+    color: $red;
+}

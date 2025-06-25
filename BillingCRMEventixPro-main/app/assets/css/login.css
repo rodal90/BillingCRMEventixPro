@@ -1,0 +1,138 @@
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  background: linear-gradient(135deg, #f0f4ff, #d1d8ff);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: min(450px, 80vw);
+  padding: 2rem;
+  transition: box-shadow 0.3s ease;
+}
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .login-container {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+.login-container:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+.login-container h1 {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .login-container h1 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .login-container h1 {
+    font-size: 1.4rem;
+  }
+}
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .login-container form {
+    gap: 0.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .login-container form {
+    gap: 0.6rem;
+  }
+}
+.login-container label {
+  padding: 0.75rem;
+}
+.login-container input {
+  padding: 0.75rem 1rem;
+  width: 250px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.login-container input:focus {
+  border-color: #6a82fb;
+  outline: none;
+  box-shadow: 0 0 8px rgba(106, 130, 251, 0.2);
+}
+@media (max-width: 768px) {
+  .login-container input {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .login-container input {
+    width: 90%;
+  }
+}
+
+.button-switch-login {
+  display: block;
+  width: 24px;
+  border: 0;
+  cursor: pointer;
+  background-image: url("../../assets/images/eye_icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  transition: transform 0.3s ease;
+}
+.button-switch-login.active {
+  background-image: url("../../assets/images/eye_slash_icon.svg");
+}
+.button-switch-login:hover {
+  transform: scale(1.1);
+}
+
+button.gl-button-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #6a82fb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button.gl-button-primary:hover {
+  background-color: #7f97ff;
+  transform: translateY(-3px);
+}
+button.gl-button-primary:active {
+  transform: translateY(1px);
+}
+@media (max-width: 768px) {
+  button.gl-button-primary {
+    max-width: 350px;
+  }
+}
+@media (max-width: 480px) {
+  button.gl-button-primary {
+    max-width: 100%;
+  }
+}
